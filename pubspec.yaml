@@ -65,7 +65,11 @@ flutter:
       - images/r5.jpg
       - images/r6.jpg
 
-      - images/back.jpeg
+      - images/back.jpeg 
+
+      - images/google.png
+
+      - images/logo.png
       
       - images/categories/akülü vidalamalar.png
       - images/categories/basınçlı yıkama makineleri.png

@@ -5,6 +5,7 @@ import 'package:fluttertoast/fluttertoast.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../pages/homePage.dart';
+import 'package:avadanlik/pages/signup.dart';
 
 class Login extends StatefulWidget {
   @override
@@ -113,7 +114,7 @@ class _LoginState extends State<Login> {
                 child: Column(
                   children: <Widget>[
                     Padding(
-                      padding: const EdgeInsets.all(8.0),
+                      padding: const EdgeInsets.fromLTRB(14.0, 8.0, 14.0, 8.0),
                       child: Material(
                         borderRadius: BorderRadius.circular(10.0),
                         color: Colors.white.withOpacity(0.8),
@@ -142,7 +143,7 @@ class _LoginState extends State<Login> {
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.all(8.0),
+                      padding: const EdgeInsets.fromLTRB(14.0, 8.0, 14.0, 8.0),
                       child: Material(
                         borderRadius: BorderRadius.circular(10.0),
                         color: Colors.white.withOpacity(0.8),
@@ -168,7 +169,7 @@ class _LoginState extends State<Login> {
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.all(8.0),
+                      padding: const EdgeInsets.fromLTRB(14.0, 8.0, 14.0, 8.0),
                       child: Material(
                         borderRadius: BorderRadius.circular(20.0),
                         color: Colors.deepOrange.withOpacity(0.8),
@@ -187,6 +188,33 @@ class _LoginState extends State<Login> {
                         ),
                       ),
                     ),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Text("Parolanızı mu unuttunuz?",
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            color: Colors.white,
+                          )),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: InkWell(
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => SignUp()));
+                        },
+                        child: Text(
+                          "Kaydol",
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                              color: Colors.deepOrange,
+                              fontSize: 20.0,
+                              fontWeight: FontWeight.bold),
+                        ),
+                      ),
+                    ),
                     Expanded(child: Container()),
                     Divider(),
                     Text(
@@ -198,7 +226,7 @@ class _LoginState extends State<Login> {
                           fontSize: 22.0),
                     ),
                     Padding(
-                      padding: const EdgeInsets.all(8.0),
+                      padding: const EdgeInsets.fromLTRB(14.0, 8.0, 14.0, 8.0),
                       child: Material(
                         borderRadius: BorderRadius.circular(20.0),
                         color: Colors.deepOrange.withOpacity(0.8),
@@ -208,13 +236,25 @@ class _LoginState extends State<Login> {
                             handleSignIn();
                           },
                           minWidth: MediaQuery.of(context).size.width,
-                          child: Text(
-                            "Google",
-                            textAlign: TextAlign.center,
-                            style: TextStyle(
-                                color: Colors.white,
-                                fontWeight: FontWeight.bold,
-                                fontSize: 22.0),
+                          child: Row(
+                            children: <Widget>[
+                              Padding(
+                                padding: const EdgeInsets.all(4.0),
+                                child: Image.asset(
+                                  "images/google.png",
+                                  width: 30.0,
+                                  height: 30.0,
+                                ),
+                              ),
+                              Text(
+                                "Google",
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 22.0),
+                              ),
+                            ],
                           ),
                         ),
                       ),
