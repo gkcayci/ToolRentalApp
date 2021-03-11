@@ -30,6 +30,7 @@ dependencies:
   google_sign_in: ^4.5.9
   shared_preferences: ^0.5.12+4
   fluttertoast: ^7.1.8
+  firebase_database:
   #cloud_firestore: ^0.8.2+3
   #firebase_auth: ^0.6.6
 
@@ -66,6 +67,7 @@ flutter:
       - images/r6.jpg
 
       - images/back.jpeg 
+      - images/back2.jpeg
 
       - images/google.png
 

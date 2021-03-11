@@ -1,9 +1,12 @@
 import 'package:avadanlik/components/HorizantalListView.dart';
 import 'package:avadanlik/components/products.dart';
 import 'package:avadanlik/pages/cart.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 
 import 'package:flutter/material.dart';
 import 'package:carousel_pro/carousel_pro.dart';
+
+import 'login.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -34,8 +37,17 @@ class _HomePageState extends State<HomePage> {
       ),
     );
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       appBar: new AppBar(
-        backgroundColor: Colors.deepOrange,
+        flexibleSpace: Container(
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              colors: [Colors.deepOrange, Colors.yellow],
+              begin: Alignment.centerLeft,
+              end: Alignment.centerRight,
+            ),
+          ),
+        ),
         title: Text('Avadanlık'),
         actions: <Widget>[
           new IconButton(
@@ -63,7 +75,13 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ),
               ),
-              decoration: new BoxDecoration(color: Colors.deepOrange),
+              decoration: new BoxDecoration(
+                gradient: LinearGradient(
+                  colors: [Colors.deepOrange, Colors.yellow],
+                  begin: Alignment.centerLeft,
+                  end: Alignment.centerRight,
+                ),
+              ),
             ),
             InkWell(
                 onTap: () {},
@@ -104,6 +122,22 @@ class _HomePageState extends State<HomePage> {
                 child: ListTile(
                     title: Text('Hakkımızda'),
                     leading: Icon(Icons.help, color: Colors.grey))),
+            Divider(),
+            InkWell(
+              onTap: () {
+                FirebaseAuth.instance.signOut().then((value) {
+                  Navigator.pushReplacement(context,
+                      MaterialPageRoute(builder: (context) => Login()));
+                });
+              },
+              child: ListTile(
+                title: Text('Çıkış'),
+                leading: Icon(
+                  Icons.transit_enterexit,
+                  color: Colors.grey,
+                ),
+              ),
+            ),
           ],
         ),
       ),
