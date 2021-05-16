@@ -1,0 +1,180 @@
+name: avadanlik
+description: A new Flutter project.
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  carousel_pro: ^1.0.0
+  firebase_auth: ^0.20.1
+  firebase_core: "^0.7.0"
+  cloud_firestore: ^0.16.0+1
+  google_sign_in: ^4.5.9
+  shared_preferences: ^0.5.12+4
+  fluttertoast: ^7.1.8
+  firebase_database:
+  #provider: ^5.0.0
+  #cloud_firestore: ^0.8.2+3
+  #firebase_auth: ^0.6.6
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^0.1.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  # assets:
+  #   - images/a_dot_burr.jpeg
+  #   - images/a_dot_ham.jpeg
+  assets:
+      - images/r1.jpg
+      - images/r2.jpg
+      - images/r3.jpeg
+      - images/r4.jpg
+      - images/r5.jpg
+      - images/r6.jpg
+
+      - images/back.jpeg 
+      - images/back2.jpeg
+
+      - images/google.png
+
+      - images/logo.png
+      
+      - images/categories/akülü vidalamalar.png
+      - images/categories/basınçlı yıkama makineleri.png
+      - images/categories/boya tabancası ve karıştırıcılar.png
+      - images/categories/çim biçme makinesi.png
+      - images/categories/inşaat makineleri.png
+      - images/categories/kaynak makineleri.png
+      - images/categories/kırıcılar ve deliciler.png
+      - images/categories/matkaplar.png
+      - images/categories/mekanik el aletleri.png
+      - images/categories/merdivenler.png
+      - images/categories/ölçü aletleri.png
+      - images/categories/takım çantaları.png
+      - images/categories/taşlamalar.png
+      - images/categories/testereler.png
+      - images/categories/zımpara ve polisaj.png
+
+      - images/products/Alpina Benzinli Çim Biçme Makinesi.jpg
+      - images\products\Atlas Yarı Akülü İstif Makineleri Ayarlanabilir Çatallı ATFL10B25.jpg
+      - images\products\Atlas Yük Emniyetli Caraskal ATSOC35 - 3 Ton - 5 Metre.jpg
+      - images/products/Awelco 200 Amper Kaynak Makinesi Mega 61471PNQ.jpg
+      - images/products/Black&Decker BXPW1500E Basınçlı Yıkama Makinesi.jpg
+      - images/products/Black&Decker Çim Biçme Makinesi BEMW481BH.jpg
+      - images/products/Black&Decker HVLP200 Elektrikli Boya Tabancası.jpg
+      - images/products/Black&Decker Zımparalama Raspalama Aleti MT300KA.jpg
+      - images/products/Bosch Akülü Vidalama GSR 180-LI.jpg
+      - images/products/Bosch Boya Tabancası PFS 3000-2.jpg
+      - images/products/Bosch Çim Biçme Makinesi Arm 36.jpg
+      - images/products/Bosch Darbeli Akülü Matkap GSB 18 Volt.jpg
+      - images/products/Bosch Darbeli Matkap GSB 550 W.jpg
+      - images/products/Bosch Dekupaj Testere 710W GST8000E.jpg
+      - images/products/Bosch Easy Aquatak 110 Basınçlı Yıkama 1300W.jpg
+      - images/products/Bosch EasyCut 12 Baretool Akülü Testere.jpg
+      - images/products/Bosch Misinalı Çim Kesme Makinesi Art 30.jpg
+      - images/products/Bosch PEX 300 AE Eksantrik Zımpara.jpg
+      - images/products/Bosch PHO1500 Planya.jpg
+      - images/products/Bosch Profesyonel Kırıcı GSH 11E 1500 W.jpg
+      - images/products/Bosch Yüksek Basınçlı Yıkama Makinesi Universal Aquatak 130 1700W.jpg
+      - images/products/Colours Kablosuz İç Dış Termometre S3315.jpg
+      - images/products/Çağsan 2x8 Basamaklı Çok Amaçlı Alüminyum İskele-Merdiven (PL003).jpg
+      - images/products/Çağsan Bergama Alüminyum Merdiven 4+1 Basamak.jpg
+      - images/products/Çağsan Üç Parçalı Çok Amaçlı Alüminyum Merdiven 3x10 Basamak.jpg
+      - images/products/Denka Metal Takım Arabası DK11651.jpg
+      - images/products/Dewalt Bits Köşe Adaptörü.jpg
+      - images/products/Dewalt D25899K Kırıcı SDSMax.jpg
+      - images/products/Dewalt DCB182-XJ 18 Volt  4,0 Ah Li-Ion Yedek Akü.jpg
+      - images/products/Dewalt DCD791NT-XJ 18 Volt Darbesiz Matkap (Aküsüz).jpg
+      - images/products/Dewalt DCF887NT-XJ 18 Volt Darbeli Tornavida (Aküsüz).jpg
+      - images/products/Dewalt DCG412NT-XJ 18Volt 125mm Avuç Taşlama (Aküsüz).jpg
+      - images/products/Dewalt DW304PK Tilki Kuyruğu Testere.jpg
+      - images/products/Dewalt Taşlama Makinesi DWE4056.jpg
+      - images/products/Karcher WD5 Premium Islak Kuru Vakum Makinası.jpg
+      - images/products/KL KLMS18-20 Akülü Multi Set 18 Volt  2 Ah Li-ion Çift Akülü Vidalama Multi Set.jpg
+      - images/products/KL PRO Büyük Taşlama 2200 Watt KLBT8318.jpg
+      - images/products/KL PRO İnverter Kaynak Makinesi 200A KLMMA200.jpg
+      - images/products/KL PRO Pnömatik Matkap Kırıcı Delici 950 Watt.jpg
+      - images/products/KL PRO Polisaj Makinesi 1400 Watt KLPJ42180.jpg
+      - images/products/Mac Allister Karıştırıcı 1300 Watt.jpg
+      - images/products/Mac Allister MSCS1500 Daire Testere 1500 w.jpg
+      - images/products/Magnusson Mag Tek Parça Tırnaklı Çekiç 550 gram.jpg
+      - images/products/Magnusson Mag Uzun Kargaburun Düz 200 mm.jpg
+      - images/products/Makita Akülü Kırıcı Delici DHR241RMJ.jpg
+      - images/products/Makita GD0800C Devir Ayarlı Kalıp Taşlama.jpg
+      - images/products/Platformlu Araba 300 kg.jpg
+      - images/products/Pvc Kaynak Makinesi CM01.jpg
+      - images/products/Rico Mini Masa Mengenesi 50 mm 013-RC1483.jpg
+      - images/products/Rico Tornavida Bits Set RC2230 30 Parça.jpg
+      - images/products/Saraylı Alüminyum Merdiven 6+1 Basamak.jpg
+      - images/products/Stanley 2 Vitesli Karıştırıcı 1400 W SDR1400.jpg
+      - images/products/Stanley Kaynak Makinesi 160A WD160IC1.jpg
+      - images/products/Stanley Su Terazisi Pro 180 100 cm.jpg
+      - images/products/Stanley Şerit Metre 20 metre.jpg
+      - images/products/Super-Bag 3'lü Organizerli Çekmece Kutu.jpg
+      - images/products/Super-Bag Slim Mobil Takım Çantası.jpg
+      - images/products/Teknisyen Takım Çantası.jpg
+
+      - images/google2.png
+
+    
+    
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware.
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
