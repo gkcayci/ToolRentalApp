@@ -30,8 +30,17 @@ dependencies:
   google_sign_in: ^4.5.9
   shared_preferences: ^0.5.12+4
   fluttertoast: ^7.1.8
+  image_picker:
   firebase_database:
-  #provider: ^5.0.0
+  provider: ^5.0.0
+  cached_network_image:
+  intl: 
+  carousel_slider: 
+  transparent_image: ^2.0.0
+  auto_size_text: ^2.1.0
+  flutter_spinkit:
+  uuid: 
+
   #cloud_firestore: ^0.8.2+3
   #firebase_auth: ^0.6.6
 
